@@ -2,9 +2,7 @@ trigger:  none
 pool : 'LK_agent'
 
 steps:
-- task: tfsec@1
-  inputs:
-    version: 'v1.26.0'
+
 - task: SonarScanner@1
   inputs:
     endpoint: 'LocalSonarQube'
