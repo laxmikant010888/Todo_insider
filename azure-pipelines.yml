@@ -1,0 +1,21 @@
+trigger:  none
+pool : 'LK_agent'
+
+steps:
+- task: tfsec@1
+  inputs:
+    version: 'v1.26.0'
+- task: SonarScanner@1
+  inputs:
+    endpoint: 'LocalSonarQube'
+    sonarServer: 'LocalSonarQube'
+    version: '4.8.0.2856'
+    configMode: 'manual'
+    projectKey: 'Sonar'
+    projectName: 'Sonar'
+    projectVersion: '1.0'
+    sources: 'src'
+    extraProperties: |
+      # Write your additional sonar-scanner properties here.
+      
+      sonar.exclusions=**\tests
