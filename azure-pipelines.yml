@@ -12,7 +12,7 @@ steps:
     projectKey: 'Sonar'
     projectName: 'Sonar'
     projectVersion: '1.0'
-    sources: 'src'
+    sources: 'F:\Devops_insider\azure-devsecops-batch-17\CodeSamples\TodoApp\FrontendTodo\ReactTodoUIMonolith'
     extraProperties: |
       # Write your additional sonar-scanner properties here.
       
